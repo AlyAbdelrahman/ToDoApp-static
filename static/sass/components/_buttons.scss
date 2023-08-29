@@ -1,6 +1,3 @@
-.buttons {}
-
-.button {}
 .plus-button-container{
   display: flex;
   align-items: center;
@@ -17,8 +14,6 @@
     cursor: pointer;
     position: relative;
     border: 0.15rem solid $dark-primary-color;
-    // box-shadow: 0 0 2em #777;
- 
   }
   .plus-cancel:before,
   .plus-cancel:after {

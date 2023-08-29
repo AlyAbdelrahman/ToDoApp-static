@@ -1,6 +1,6 @@
 .nav-container{
     display: flex;
-    margin-right: 1rem;
+    margin-#{$direction}: 1rem;
     overflow: hidden;
     align-items: center;
     .skewed {
@@ -111,10 +111,10 @@
     .qr-container{
         position: absolute;
         top: 2.1rem;
-        left: 5rem;
+        #{$reverse-direction}: 5rem;
     }
     @media ($max-phones) {
-        margin-right: 0;
+        margin-#{$direction}: 0;
         padding: 15px 10px;
         display: block;
         top: initial;

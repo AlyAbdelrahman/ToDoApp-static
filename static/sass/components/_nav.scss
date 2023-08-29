@@ -101,6 +101,7 @@
         line-height: 1.5;
     }
     .page-title{
+        font-weight: bold;
         @if $language == 'ar' {
             #{$direction}: 4rem;
         } @else {

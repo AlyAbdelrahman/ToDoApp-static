@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'BPReplay Regular';
-  src: url("../../assets/fonts/bpreplay-webfont.eot");
-  src: url("../../assets/fonts/bpreplay-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/bpreplay-webfont.woff") format("woff"), url("../../assets/fonts/bpreplay-webfont.ttf") format("truetype"), url("../../assets/fonts/bpreplay-webfont.svg#webfontIhiDai48") format("svg"); }
+  src: url("../assets/fonts/bpreplay-webfont.eot");
+  src: url("../assets/fonts/bpreplay-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/bpreplay-webfont.woff") format("woff"), url("../assets/fonts/bpreplay-webfont.ttf") format("truetype"), url("../assets/fonts/bpreplay-webfont.svg#webfontIhiDai48") format("svg"); }
 
 @font-face {
   font-family: 'Noto Kufi Arabic';
   font-style: normal;
   font-weight: 400;
-  src: url("../../assets/fonts/NotoKufiArabic-Regular.eot");
-  src: url("../../assets/fonts/NotoKufiArabic-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/NotoKufiArabic-Regular.woff2") format("woff2"), url("../../assets/fonts/NotoKufiArabic-Regular.woff") format("woff"), url("../../assets/fonts/NotoKufiArabic-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NotoKufiArabic-Regular.eot");
+  src: url("../assets/fonts/NotoKufiArabic-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NotoKufiArabic-Regular.woff2") format("woff2"), url("../assets/fonts/NotoKufiArabic-Regular.woff") format("woff"), url("../assets/fonts/NotoKufiArabic-Regular.ttf") format("truetype"); }
 
 /* Components */
 .nav-container {
@@ -29,7 +29,8 @@
     position: relative;
     overflow: hidden; }
   .nav-container .sub-title-nav-container {
-    background-color: red;
+    background-color: white;
+    color: #02A9A5;
     height: 3rem;
     width: 40%;
     display: flex;
@@ -37,13 +38,19 @@
     align-items: center;
     flex-direction: row;
     left: -2.3rem; }
+  .nav-container .sub-title-image {
+    position: relative;
+    z-index: 99;
+    left: 3rem;
+    border-radius: 5px; }
   .nav-container .main-title-nav-container {
-    background-color: orange;
+    background-color: #004E75;
+    color: white;
     height: 6rem;
     width: 60%;
     right: -3rem; }
   .nav-container .main-title-nav-container-box {
-    background-color: #3db4d1;
+    background-color: #02A9A5;
     overflow: initial; }
   .nav-container .main-title-box {
     height: 3rem;
@@ -56,11 +63,39 @@
     width: 102%;
     overflow: hidden; }
   .nav-container .main-title {
-    -webkit-transform: skew(-41deg);
-    left: 3rem;
-    position: relative; }
+    -webkit-transform: skew(-43deg);
+    left: 1.4rem;
+    position: relative;
+    margin: 0;
+    font-weight: bold; }
+    .nav-container .main-title--custom-margin {
+      left: 2.4rem; }
+    .nav-container .main-title--english {
+      font-size: 0.7rem;
+      font-weight: bold; }
+  .nav-container .main-titles-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5; }
   .nav-container .page-title {
-    left: 6rem; }
+    left: 4rem; }
+  .nav-container .qr-container {
+    position: absolute;
+    top: 2.1rem;
+    left: 5rem; }
+  @media (max-width: 767px) {
+    .nav-container {
+      margin-right: 0;
+      padding: 15px 10px;
+      display: block;
+      top: initial;
+      right: initial;
+      width: 100%;
+      bottom: 0;
+      transition: transform .5s ease-in-out;
+      transition-delay: .2s; }
+      .nav-container .sub-title-nav-container {
+        width: 60%; } }
 
 * {
   box-sizing: border-box;
@@ -100,8 +135,8 @@ input {
 
 @media (max-width: 1024px) {
   body {
-    background-color: #f0f0f0; } }
+    background-color: #cd6767; } }
 
 @media (max-width: 767px) {
   body {
-    background-color: #dddddd; } }
+    background-color: #6e7064; } }

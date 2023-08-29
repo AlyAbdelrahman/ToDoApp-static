@@ -1,14 +1,101 @@
 @font-face {
   font-family: 'BPReplay Regular';
-  src: url("../../assets/fonts/bpreplay-webfont.eot");
-  src: url("../../assets/fonts/bpreplay-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/bpreplay-webfont.woff") format("woff"), url("../../assets/fonts/bpreplay-webfont.ttf") format("truetype"), url("../../assets/fonts/bpreplay-webfont.svg#webfontIhiDai48") format("svg"); }
+  src: url("../assets/fonts/bpreplay-webfont.eot");
+  src: url("../assets/fonts/bpreplay-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/bpreplay-webfont.woff") format("woff"), url("../assets/fonts/bpreplay-webfont.ttf") format("truetype"), url("../assets/fonts/bpreplay-webfont.svg#webfontIhiDai48") format("svg"); }
 
 @font-face {
   font-family: 'Noto Kufi Arabic';
   font-style: normal;
   font-weight: 400;
-  src: url("../../assets/fonts/NotoKufiArabic-Regular.eot");
-  src: url("../../assets/fonts/NotoKufiArabic-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/NotoKufiArabic-Regular.woff2") format("woff2"), url("../../assets/fonts/NotoKufiArabic-Regular.woff") format("woff"), url("../../assets/fonts/NotoKufiArabic-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/NotoKufiArabic-Regular.eot");
+  src: url("../assets/fonts/NotoKufiArabic-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NotoKufiArabic-Regular.woff2") format("woff2"), url("../assets/fonts/NotoKufiArabic-Regular.woff") format("woff"), url("../assets/fonts/NotoKufiArabic-Regular.ttf") format("truetype"); }
+
+/* Components */
+.nav-container {
+  display: flex;
+  margin-right: 1rem;
+  overflow: hidden;
+  align-items: center; }
+  .nav-container .skewed {
+    -webkit-transform: skew(317deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    position: relative;
+    overflow: hidden; }
+  .nav-container .reversed-skewed {
+    -webkit-transform: skew(-317deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    position: relative;
+    overflow: hidden; }
+  .nav-container .sub-title-nav-container {
+    background-color: white;
+    color: #02A9A5;
+    height: 3rem;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    right: -2.3rem; }
+  .nav-container .sub-title-image {
+    position: relative;
+    z-index: 99;
+    right: 3rem;
+    border-radius: 5px; }
+  .nav-container .main-title-nav-container {
+    background-color: #004E75;
+    color: white;
+    height: 6rem;
+    width: 60%;
+    left: -3rem; }
+  .nav-container .main-title-nav-container-box {
+    background-color: #02A9A5;
+    overflow: initial; }
+  .nav-container .main-title-box {
+    height: 3rem;
+    top: 1.5rem;
+    position: relative;
+    align-items: center;
+    display: flex;
+    left: 2rem;
+    -webkit-transform: skew(360deg);
+    width: 102%;
+    overflow: hidden; }
+  .nav-container .main-title {
+    -webkit-transform: skew(43deg);
+    right: 1.4rem;
+    position: relative;
+    margin: 0;
+    font-weight: bold; }
+    .nav-container .main-title--custom-margin {
+      right: 2.4rem; }
+    .nav-container .main-title--english {
+      font-size: 0.7rem;
+      font-weight: bold; }
+  .nav-container .main-titles-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5; }
+  .nav-container .page-title {
+    right: 4rem; }
+  .nav-container .qr-container {
+    position: absolute;
+    top: 2.1rem;
+    left: 5rem; }
+  @media (max-width: 767px) {
+    .nav-container {
+      margin-right: 0;
+      padding: 15px 10px;
+      display: block;
+      top: initial;
+      left: initial;
+      width: 100%;
+      bottom: 0;
+      transition: transform .5s ease-in-out;
+      transition-delay: .2s; }
+      .nav-container .sub-title-nav-container {
+        width: 60%; } }
 
 * {
   box-sizing: border-box;
@@ -22,7 +109,8 @@ body {
   font-family: "Noto Kufi Arabic", "Noto Kufi Arabic Bold", "BPReplay Regular", Helvetica, Arial, sans-serif;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #F0EFEA; }
 
 a, a:focus, a:hover {
   color: inherit;
@@ -48,8 +136,8 @@ input {
 
 @media (max-width: 1024px) {
   body {
-    background-color: #f0f0f0; } }
+    background-color: #cd6767; } }
 
 @media (max-width: 767px) {
   body {
-    background-color: #dddddd; } }
+    background-color: #6e7064; } }

@@ -1,0 +1,88 @@
+.nav-container{
+    display: flex;
+    margin-right: 1rem;
+    overflow: hidden;
+    align-items: center;
+    .skewed {
+        @if $language == 'ar' {
+            -webkit-transform: skew(317deg);
+            -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+            position: relative;
+            overflow: hidden;
+        } @else {
+            -webkit-transform: skew(-317deg);
+            -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+            position: relative;
+            overflow: hidden;
+        }
+    }
+    .reversed-skewed{
+        @if $language == 'ar' {
+            -webkit-transform: skew(-317deg);
+            -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+            position: relative;
+            overflow: hidden;
+        } @else {
+            -webkit-transform: skew(317deg);
+            -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+            position: relative;
+            overflow: hidden;
+        }
+    }
+    .sub-title-nav-container{
+        background-color: red;
+        height: 3rem;
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        @if $language == 'ar' {
+            #{$direction}: -2.3rem;
+        } @else {
+            #{$direction}: -2.3rem;
+        }
+    }
+    .main-title-nav-container{
+        background-color: orange;
+        height: 6rem;
+        width: 60%;
+        #{$reverse-direction}: -3rem;
+    }
+
+    .main-title-nav-container-box{
+        background-color: rgb(61, 180, 209);
+        overflow: initial;
+    }
+    .main-title-box{
+        height: 3rem;
+        top: 1.5rem;
+        position: relative;
+        align-items: center;
+        display: flex;
+        #{$reverse-direction}: 2rem;
+        -webkit-transform: skew(360deg);
+        width: 102%;
+        overflow: hidden;
+    }
+    .main-title{
+        @if $language == 'ar' {
+            -webkit-transform: skew(41deg);
+        } @else {
+            -webkit-transform: skew(-41deg);
+        }
+        #{$direction}: 3rem;
+        position: relative;
+    }
+    .page-title{
+        @if $language == 'ar' {
+            #{$direction}: 6rem;
+        } @else {
+            #{$direction}: 6rem;
+        }
+    }
+}

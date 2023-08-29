@@ -10,6 +10,58 @@
   src: url("../../assets/fonts/NotoKufiArabic-Regular.eot");
   src: url("../../assets/fonts/NotoKufiArabic-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/NotoKufiArabic-Regular.woff2") format("woff2"), url("../../assets/fonts/NotoKufiArabic-Regular.woff") format("woff"), url("../../assets/fonts/NotoKufiArabic-Regular.ttf") format("truetype"); }
 
+/* Components */
+.nav-container {
+  display: flex;
+  margin-right: 1rem;
+  overflow: hidden;
+  align-items: center; }
+  .nav-container .skewed {
+    -webkit-transform: skew(-317deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    position: relative;
+    overflow: hidden; }
+  .nav-container .reversed-skewed {
+    -webkit-transform: skew(317deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    position: relative;
+    overflow: hidden; }
+  .nav-container .sub-title-nav-container {
+    background-color: red;
+    height: 3rem;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    left: -2.3rem; }
+  .nav-container .main-title-nav-container {
+    background-color: orange;
+    height: 6rem;
+    width: 60%;
+    right: -3rem; }
+  .nav-container .main-title-nav-container-box {
+    background-color: #3db4d1;
+    overflow: initial; }
+  .nav-container .main-title-box {
+    height: 3rem;
+    top: 1.5rem;
+    position: relative;
+    align-items: center;
+    display: flex;
+    right: 2rem;
+    -webkit-transform: skew(360deg);
+    width: 102%;
+    overflow: hidden; }
+  .nav-container .main-title {
+    -webkit-transform: skew(-41deg);
+    left: 3rem;
+    position: relative; }
+  .nav-container .page-title {
+    left: 6rem; }
+
 * {
   box-sizing: border-box;
   font-weight: 300; }
@@ -21,7 +73,8 @@ body {
   font-family: "BPReplay Regular", "BPReplay Regular Bold", "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #F0EFEA; }
 
 a, a:focus, a:hover {
   color: inherit;

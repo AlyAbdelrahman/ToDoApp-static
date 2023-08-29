@@ -1,0 +1,51 @@
+.todo-card-container {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: rgb(60, 195, 232);
+    height: 87vh;
+    align-items: center;
+    .todo-card-box {
+        width: 20rem;
+        height: 30rem;
+        background-color: aquamarine;
+    }
+    .todo-card-date-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        align-items: center;
+    }
+    .date-container {
+        display: flex;
+        align-items: center;
+    }
+    .date-day {
+        font-size: 2rem;
+        margin: 0 0.3rem;
+        p {
+            font-size: 2rem;
+            margin: 0 0.3rem;
+            font-weight: bold;
+        }
+    }
+    .date-month-year-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+        span {
+            font-size: 0.6rem;
+            font-weight: bold;
+        }
+    }
+    .date-today{
+        span{
+            font-weight: bold;
+            font-size: 0.7rem;
+        }
+    }
+}

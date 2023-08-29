@@ -55,6 +55,8 @@
 .todo-card-list-container {
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    height: 19rem;
 }
 .todo-item-container {
     display: flex;

@@ -36,7 +36,7 @@
   <!-- to-do card -->
   <section class="todo-card-container">
     <div class="todo-card-box">
-
+      <!-- TO DO HEADER -->
       <div class="todo-card-date-container">
 
         <div class="date-today">
@@ -65,6 +65,10 @@
             <div class="round">
               <input type="checkbox" checked id="checkbox" />
               <label for="checkbox"></label>
+            </div>
+            <div class="close small-x">
+              <!-- <input type="checkbox" checked id="checkbox" />
+              <label for="checkbox"></label> -->
             </div>
           </div>
           <div class="to-do-item">
@@ -147,12 +151,33 @@
 
 
       </div>
+      <!-- ADD TO-DO  -->
       <div class="add-todo-container">
         <div class="plus-button-container">
-          <div id="thing" class="plus-cancel"></div> 
-        </div>
+          <div id="thing" class="plus-cancel"></div>
         </div>
       </div>
+    </div>
+
+    <!-- EIDIT MODAL -->
+    <div class="edit-popup">
+      <div class="wrapper">
+        <a href="#demo-modal">Open edit/add Modal</a>
+      </div>
+
+      <div id="demo-modal" class="modal">
+        <div class="modal__content">
+         <div>
+          <form action="/action_page.php">
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task"><br><br>
+            <input type="submit" value="Submit" class="submit">
+          </form>
+         </div>
+          <a href="#" class="modal__close">&times;</a>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 

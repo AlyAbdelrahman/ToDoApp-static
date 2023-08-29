@@ -1,0 +1,41 @@
+.buttons {}
+
+.button {}
+.plus-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .plus-cancel { 
+    top: 2rem;
+    background: $faded-primary-color;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    border: 0.15rem solid $dark-primary-color;
+    // box-shadow: 0 0 2em #777;
+ 
+  }
+  .plus-cancel:before,
+  .plus-cancel:after {
+    content: '';
+    display: block;
+    background: $faded-dark-primary-color;
+    position: absolute;
+    height: 1rem;
+    width: 0.2rem;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  .plus-cancel:before {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}

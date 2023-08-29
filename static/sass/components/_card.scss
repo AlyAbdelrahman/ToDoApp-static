@@ -9,6 +9,7 @@
     width: 20rem;
     height: 30rem;
     background-color: $white-color;
+    position: relative;
 }
 .todo-card-date-container {
     display: flex;
@@ -65,4 +66,9 @@
 }
 .completeted-task{
     color: $disbaled-text-color;
+}
+.add-todo-container{
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
 }
